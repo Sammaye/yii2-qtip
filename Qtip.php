@@ -7,7 +7,7 @@ use \Exception;
 use yii\base\Widget;
 use yii\helpers\Html;
 use yii\helpers\Json;
-use common\components\qtip\QtipAsset;
+use sammaye\qtip\QtipAsset;
 
 class Qtip extends Widget
 {
