@@ -3,6 +3,8 @@ yii2-qtip
 
 A Yii2 qtip Plugin: [http://qtip2.com/](http://qtip2.com/)
 
+This plugin currently deals with hooking qtip onto elements.
+
 Usage of this plugin is really simple. Let's take an example:
 
     \sammaye\qtip\Qtip::widget([
@@ -21,7 +23,7 @@ Usage of this plugin is really simple. Let's take an example:
     ]);
 
 Now there are in reality only two widget properties, one being `hook` and the other being `options`. All of the other properties you see here such as `content`, `style` and `position` 
-are all being mnagically added to the `options` property` to be JSON encoded directly into the qtip plugins constructor in JavaScript. 
+are all being magically added to the `options` property to be JSON encoded directly into the qtip plugins constructor in JavaScript. 
 
 This means that in order to understand how to use this plugin you only need to know what `hook` is. `hook` denotes the element for which a tooltip will appear for. An example of this 
 would be:
