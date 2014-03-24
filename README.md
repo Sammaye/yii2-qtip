@@ -1,7 +1,7 @@
 yii2-qtip
 =========
 
-A Yii2 qtip Plugin: http://qtip2.com/
+A Yii2 qtip Plugin: [http://qtip2.com/](http://qtip2.com/)
 
 Usage of this plugin is really simple. Let's take an example:
 
