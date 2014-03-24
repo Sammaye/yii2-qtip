@@ -5,20 +5,20 @@ A Yii2 qtip Plugin: [http://qtip2.com/](http://qtip2.com/)
 
 Usage of this plugin is really simple. Let's take an example:
 
-\sammaye\qtip\Qtip::widget([
-    'hook' => '.what_does_this_mean',
-    'content' => [
-        'text' => new JsExpression("function(api){
-            var caption = $(this).data('caption');
-            return '<p style=\'font-size:13px; line-height:17px; margin:0;\'>'+caption+'</p>';
-        }")
-    ],
-    'style' => [ 'classes' => 'ui-tooltip-shadow ui-tooltip-light' ],
-    'position' => [
-        'my' => 'bottom center',
-        'at' => 'top center'
-    ]
-]);
+    \sammaye\qtip\Qtip::widget([
+        'hook' => '.what_does_this_mean',
+        'content' => [
+            'text' => new JsExpression("function(api){
+                var caption = $(this).data('caption');
+                return '<p style=\'font-size:13px; line-height:17px; margin:0;\'>'+caption+'</p>';
+            }")
+        ],
+        'style' => [ 'classes' => 'ui-tooltip-shadow ui-tooltip-light' ],
+        'position' => [
+            'my' => 'bottom center',
+            'at' => 'top center'
+        ]
+    ]);
 
 Now there are in reality only two widget properties, one being `hook` and the other being `options`. All of the other properties you see here such as `content`, `style` and `position` 
 are all being mnagically added to the `options` property` to be JSON encoded directly into the qtip plugins constructor in JavaScript. 
